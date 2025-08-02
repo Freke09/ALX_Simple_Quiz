@@ -1,10 +1,10 @@
 function checkAnswer(){
     const correctAnswer = "4";
     
-    let userAnswer = document.querySelector('input[name="quiz"]').value;
+    let  checked = document.querySelector('input[name="quiz"]');
     let feedback = document.getElementById('feedback');
     
-    
+    userAnswer = checked.value;
     if(userAnswer == correctAnswer){
         feedback.textContent = "Correct! Well done.";
     } else {
