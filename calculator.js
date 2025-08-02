@@ -12,9 +12,9 @@ function multiply(a, b){
 
 function divide(a, b){
     if (b === 0){
-        return "Can't divide by zero!"
+        throw new Error("Can't divide by zero");
     }else 
-    return a / b;
+        return a / b;
 }
 
 document.getElementById('add').addEventListener('click', function() {
